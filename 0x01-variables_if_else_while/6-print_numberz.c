@@ -8,12 +8,13 @@
 
 int main(void)
 {
-	int num = 48;
+	int digit = 0;
 
-	do {
-		putchar(num);
-		num++;
-	} while (num < 58);
-	printf("\n");
+	while (digit <= 9)
+	{
+		putchar(digit + '0');
+		digit++;
+	}
+	putchar('\n');
 	return (0);
 }
