@@ -3,15 +3,16 @@
 /**
  * main - Entry point
  *
- * description: function that prints the alphabet, in lowercase, followed by a new line.
- *
+ * description: function that prints the alphabet
+ *		the function will print all ascii table range 97-122
  * Return: (0)
 */
 
 void print_alphabet(void)
 {
 	char alpha = 'a';
-	while(alpha <= 122)
+
+	while (alpha <= 122)
 	{
 		putchar(alpha);
 		alpha++;
@@ -21,5 +22,5 @@ void print_alphabet(void)
 int main(void)
 {
 	print_alphabet();
-	return(0);
+	return (0);
 }
