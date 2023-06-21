@@ -1,11 +1,8 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - Entry point
- *
- * description: checkout if its parameter c is lower case or upper case
- *
- * Return: (0)
+* _islower-function to check if character is lowercase
+* @c: checks input of function
+* Return: returns 1 if 'c' is lowercase otherwise always 0 (Success)
 */
 
 int _islower(int c)
@@ -14,18 +11,5 @@ int _islower(int c)
 	{
 		return (1); /* is lower case return */
 	}
-	return (0);
-}
-int main(void)
-{
-	int r;
-
-	r = _islower('H');
-	putchar(r + '0');
-	r = _islower('o');
-	putchar(r + '0');
-	r = _islower(108);
-	putchar(r + '0');
-	putchar('\n');
 	return (0);
 }
