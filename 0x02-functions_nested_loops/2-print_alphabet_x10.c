@@ -1,14 +1,10 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * description: function that prints the alphabet 10 times
- *              the function will print all ascii table range 97-122
- * Return: (0)
+ * print_alphabet_x10 - function that will print the alphabet 10 times
 */
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	char alpha = 'a';
 
