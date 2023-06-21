@@ -1,12 +1,8 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- *
- * description:print every minute of the day
- *
- * Return: (0)
-*/
+ * jack_bauer- print every minute of the day
+ */
 
 void jack_bauer(void)
 {
@@ -17,10 +13,4 @@ void jack_bauer(void)
 		for (minute = 0; minute < 60; minute++)
 			printf("%02d:%02d\n", hour, minute);
 	}
-}
-
-int main(void)
-{
-	jack_bauer();
-	return (0);
 }
