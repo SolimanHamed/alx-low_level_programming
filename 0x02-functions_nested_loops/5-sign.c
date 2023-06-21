@@ -1,11 +1,9 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - Entry point
- *
- * description: print the sign of number
- *
- * Return: (0)
+* print_sign - print + if n is greater than zero, 0 if n is zero and
+* if n is less than zero.
+* @n: takes integer type input for function.
+* Return: 1 if +, 0 if 0 and -1 if -
 */
 
 int print_sign(int n)
@@ -25,31 +23,4 @@ int print_sign(int n)
 		putchar('-');
 		return (-1);
 	}
-}
-
-int main(void)
-{
-	int r;
-
-	r = print_sign(98);
-	putchar(',');
-	putchar(' ');
-putchar(r + '0');
-putchar('\n');
-r = print_sign(0);
-putchar(',');
-putchar(' ');
-putchar(r + '0');
-putchar('\n');
-r = print_sign(0xff);
-putchar(',');
-putchar(' ');
-putchar(r + '0');
-putchar('\n');
-r = print_sign(-1);
-putchar(',');
-putchar(' ');
-putchar(r + '0');
-putchar('\n');
-return (0);
 }
