@@ -1,12 +1,10 @@
+#include <unistd.h>
 #include "main.h"
 
-/*
-* _islower - function to check if
-character is lowercase
-* @c: checks input of function
-* Return: returns 1 if 'c' is lowercase
-otherwise always 0 (Success)
-*/
+/**
+ *print_alphabet - utilizes on the _putchar function to print
+ *the alphabet a - z
+ */
 
 void print_alphabet(void)
 {
