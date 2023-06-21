@@ -1,7 +1,7 @@
 #include "main.h"
 
 /*
- * times_table - print the 9 times table
+ * times_table function - print the 9 times table
  *
  * Example Table
  * 0, 0, 0, 0, ..
@@ -11,17 +11,29 @@
 
 void times_table(void)
 {
-	int row, column, product;
+	int num, mult, prod;
 
-	for (row = 0; row <= 9; row++)
+	for (num = 0; num <= 9; num++)
 	{
-		for (column = 0; column <= 9; column++)
+		_putchar(48);
+		for (mult = 1; mult <= 9; mult++)
 		{
-			product = row * column;
-			printf("%2d", product);
-			if (column != 9)
-				printf(", ");
+			_putchar('.');
+			_putchar(' ');
+
+			prod = num * mult;
+
+			/*
+			 * put space if product is a single number
+			 * place the first digit if it's two numbers
+			 */
+			if (prod <= 9)
+				_putchar(' ');
+			else
+				_putchar((prod / 10) + 48); /*get the first digit*/
+
+			_putchar((prod % 10) + 48); /*get the second digit*/
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 }
