@@ -1,12 +1,12 @@
-#include <stdio.h>
+#include "main.h"
 
-/**
- * main - Entry point
- *
- * description: print to 98
- *
- * Return: (0)
-*/
+/*
+ * print_to_98() - print n to 98 counts
+ * separated by comma, followed
+ * by space and number should be
+ * printed in order
+ * @n: input
+ */
 
 void print_to_98(int n)
 {
@@ -20,7 +20,7 @@ void print_to_98(int n)
 		}
 		printf("\n");
 	}
-	else 
+	else
 	{
 		for (int i = n; i >= 98; i--)
 		{
@@ -30,14 +30,4 @@ void print_to_98(int n)
 		}
 		printf("\n");
 	}
-}
-
-int main(void)
-{
-	print_to_98(0);
-	print_to_98(98);
-	print_to_98(111);
-	print_to_98(81);
-	print_to_98(-10);
-	return (0);
 }
