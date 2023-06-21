@@ -23,8 +23,3 @@ void print_alphabet(void)
 		alpha = 'a';
 	}
 }
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
