@@ -1,23 +1,15 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * add - add two integers
  *
- * description: int add (int,int);
+ * @x: first input
+ * @y: second input
  *
- * Return: (0)
-*/
+ * Return: x + y
+ */
 
 int add(int x, int y)
 {
 	return (x + y);
-}
-
-int main(void)
-{
-	int n;
-
-	n = add(89, 9);
-	printf("%d\n", n);
-	return (0);
 }
