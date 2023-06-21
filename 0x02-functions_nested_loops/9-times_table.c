@@ -1,11 +1,12 @@
-#include <stdio.h>
+#include "main.h"
 
-/**
- * main - Entry point
+/*
+ * times_table - print the 9 times table
  *
- * description: times table
+ * Example Table
+ * 0, 0, 0, 0, ..
+ * 0, 1, 2, 3, ..
  *
- * Return: (0)
 */
 
 void times_table(void)
@@ -23,10 +24,4 @@ void times_table(void)
 		}
 		printf("\n");
 	}
-}
-
-int main(void)
-{
-	times_table();
-	return (0);
 }
