@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * Description: computes the sum of all
+ * the multiples of 3 or 3
+ * below 1024 (excluded)
  *
- * description: This program prints all natural numbers from a given input value (n) up to 98,
- *
- * Return: (0)
-*/
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
