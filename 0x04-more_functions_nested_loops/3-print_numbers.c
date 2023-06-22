@@ -12,7 +12,7 @@ void print_numbers(void)
 	int num = 0;
 
 	do {
-		putchchar(num + 48);
+		putchar(num + 48);
 		num++;
 	} while (num >= 0 && num <= 9);
 	putchar('\n');
