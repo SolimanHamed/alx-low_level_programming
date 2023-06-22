@@ -33,6 +33,6 @@ void times_table(void)
 
 			_putchar((prod % 10) + 48); /*get the second digit*/
 		}
-		_putchar('\n')
+		_putchar('\n');
 	}
 }
