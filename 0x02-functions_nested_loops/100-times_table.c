@@ -1,12 +1,10 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * print_times_table - prints time table of n
  *
- * description: print_times_table(int n)
- *
- * Return: (0)
-*/
+ * @n: takes number input
+ */
 
 void print_times_table(int n)
 {
@@ -26,16 +24,4 @@ void print_times_table(int n)
 		}
 		printf("\n");
 	}
-}
-
-int main(void)
-{
-	print_times_table(3);
-	putchar('\n');
-	print_times_table(5);
-	putchar('\n');
-	print_times_table(98);
-	putchar('\n');
-	print_times_table(12);
-	return (0);
 }
