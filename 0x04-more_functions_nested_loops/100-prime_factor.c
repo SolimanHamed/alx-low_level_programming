@@ -6,7 +6,6 @@
  * @x: input number
  *
  * Return: square root of x
- *
  */
 
 double _sqrt(double x)
@@ -25,7 +24,7 @@ double _sqrt(double x)
 }
 
 /**
- * largest_prime_factor = find and prints the largest
+ * largest_prime_factor - find and prints the largest
  * prime factor of number (num)
  *
  * @num: number to fin
