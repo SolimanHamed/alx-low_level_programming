@@ -22,7 +22,7 @@ void generatePassword() {
 	}
 
 	password[PASSWORD_LENGTH] = '\0'; /* NULL Terminator */	
-		printf("Tada! Congrats %s\n", password);
+		printf("Tada! Congrats\n");
 }
 
 int main(void)
