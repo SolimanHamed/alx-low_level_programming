@@ -20,8 +20,6 @@ int _atoi(char *s)
 			sign = -sign;
 		s++;
 	}
-	if (*(s - 1) == '-')
-		sign = -1;
 	while (*s != '\0' && *s >= '0' && *s <= '9')
 	{
 		int digit = *s - '0';
