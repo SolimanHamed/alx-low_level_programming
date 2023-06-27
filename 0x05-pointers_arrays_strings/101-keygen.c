@@ -40,5 +40,7 @@ int main(void)
 			
 		}
 	}
+	print("%s", password);
+	return (0);
 }
 			
