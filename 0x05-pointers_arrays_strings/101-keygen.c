@@ -3,7 +3,7 @@
 #include <time.h>
 
 
-#define PASSWORD_LENGTH 10
+#define PASSWORD_LENGTH 90
 
 int main(void)
 {
@@ -15,6 +15,6 @@ int main(void)
 	for (i = 0; i < PASSWORD_LENGTH; i++)
 		password[i] = '!' + rand() % 94;
 	password[PASSWORD_LENGTH] = '\0'; // Null terminator
-	printf("%s\n", password);
+	
 	printf("Tada! Congrats\n");
 }
