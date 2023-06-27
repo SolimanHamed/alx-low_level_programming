@@ -31,6 +31,6 @@ void generatePassword() {
 
 int main(void)
 {
-	generateRandomChar();
+	generatePassword();	
 	return (0);
 }
