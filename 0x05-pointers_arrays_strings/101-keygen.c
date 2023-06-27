@@ -26,7 +26,7 @@ void generatePassword() {
 		printf("Tada! Congrats %s\n", password);
 	}
 	else
-		 printf("Wrong password: %s\n", password);
+		generatePassword();
 }
 
 int main(void)
