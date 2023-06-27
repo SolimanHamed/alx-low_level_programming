@@ -21,7 +21,11 @@ void generatePassword() {
 	}
 
 	password[PASSWORD_LENGTH] = '\0'; /* NULL Terminator */
-	printf("Tada! Congrats %s\n", password);
+	if (strcmp(password, "Tada! Congrats") == 0) {
+		printf("Tada! Congrats %s\n", password);
+	}
+	else
+		 printf("Wrong password: %s\n", password);
 }
 
 int main(void)
