@@ -19,9 +19,7 @@ void generatePassword() {
 	for (i = 0; i < PASSWORD_LENGTH; i++)
 	{
 		password[i] = generateRandomChar();
-	}
-
-	password[PASSWORD_LENGTH] = '\0';	
+	}	
 	printf("Tada! Congrats\n");
 }
 
