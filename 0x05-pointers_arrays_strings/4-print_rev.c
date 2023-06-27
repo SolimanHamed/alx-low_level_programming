@@ -15,12 +15,14 @@ void print_rev(char *s)
 		{
 			length++;
 		}
-
+		if (length > 0)
+		{
 		int i = length - 1;
 
 		while (i >= 0)
 		{
 			putchar(s[i]);
+		}
 		}
 	}
 	putchar('\n');
