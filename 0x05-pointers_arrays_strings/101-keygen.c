@@ -3,28 +3,18 @@
 #include <time.h>
 
 
-#define PASSWORD_LENGTH 8
-
-char generateRandomChar() {
-	/* ASCII Values for printable characters: 33 to 126 */
-	return ((char)(rand() % 94) + 33);
-}
-
-void generatePassword() {
-	int i = 0;
-	char password[PASSWORD_LENGTH + 1]; /* +1 For the null terminator*/
-
-	srand(time(NULL));
-
-	for (i = 0; i < PASSWORD_LENGTH; i++)
-	{
-		password[i] = generateRandomChar();
-	}	
-	printf("Tada! Congrats\n");
-}
+#define PASSWORD_LENGTH 10
 
 int main(void)
 {
-	generatePassword();	
-	return (0);
+	int i = 0;
+	srand(time(NULL));
+
+	char password[PASSWORD_LENGTH +1];
+
+	for (i = 0; i < PASSWORD_LENGTH; i++)
+		password[i] = '!' + rand() % 94;
+	password[PASSWORD_LENGTH] = '\0'; // Null terminator
+	printf("%s\n", password);
+	printf("Tada! Congrats\n");
 }
