@@ -7,11 +7,11 @@
 
 void rev_string(char *s)
 {
-	if (*s != NULL)
+	if (s != NULL)
 	{
 		int length = 0;
 
-		while (*s[length] != '\0')
+		while (s[length] != '\0')
 			Length++;
 		int start = 0;
 		int end = length - 1;
