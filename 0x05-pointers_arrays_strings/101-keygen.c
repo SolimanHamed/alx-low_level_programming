@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <string.h>
+
 
 #define PASSWORD_LENGTH 8
 
@@ -21,12 +21,8 @@ void generatePassword() {
 		password[i] = generateRandomChar();
 	}
 
-	password[PASSWORD_LENGTH] = '\0'; /* NULL Terminator */
-	if (strcmp(password, "Tada! Congrats") == 0) {
+	password[PASSWORD_LENGTH] = '\0'; /* NULL Terminator */	
 		printf("Tada! Congrats %s\n", password);
-	}
-	else
-		generatePassword();
 }
 
 int main(void)
