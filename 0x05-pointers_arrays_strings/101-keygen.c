@@ -10,11 +10,12 @@ char generateRandomChar() {
 }
 
 void generatePassword() {
+	int i = 0;
 	char password[PASSWORD_LENGTH + 1]; /* +1 For the null terminator*/
 
 	srand(time(NULL));
 
-	for (int i = 0; i < PASSWORD_LENGTH; i++)
+	for (i = 0; i < PASSWORD_LENGTH; i++)
 	{
 		password[i] = generateRandomChar();
 	}
