@@ -2,45 +2,25 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define PASSWORD_LENGTH 10
+
 int main(void)
 {
-	char password[84];
+    srand(time(NULL));
 
-	int index = 0, sum = 0, diff1, diff2;
+    char password[PASSWORD_LENGTH + 1]; // +1 for null terminator
 
-	srand(time(NULL));
+    for (int i = 0; i < PASSWORD_LENGTH; i++)
+    {
+        // Generate a random character between '!' and '~'
+        password[i] = '!' + rand() % 94;
+    }
 
-	while (sum < 2772)
-	{
-		password[index] = 33 + rand() % 94;
-		sum += password[index++];
-	}
-	password[index] = '\0';
+    password[PASSWORD_LENGTH] = '\0'; // Null terminator
 
-	if (sum != 2772)
-	{
-		diff1 = (sum - 2772) / 2;
-		diff2 = (sum - 2772) / 2;
+    printf("%s\n", password);
+    printf("Tada! Congrats\n");
 
-		if ((sum - 2772) % 2 != 0)
-			diff1++;
-
-		for (index = 0; password[index]; index++)
-		{
-			if (password[index] -= diff1)
-					break;
-		}
-		for (index = 0; password[index]; index++)
-		{
-			if (password[index] >= (33 + diff2))
-			{
-				password[index] -= diff2;
-				break;
-			}
-			
-		}
-	}
-	print("%s", password);
-	return (0);
+    return 0;
 }
-			
+
