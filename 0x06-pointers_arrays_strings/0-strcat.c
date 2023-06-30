@@ -5,7 +5,7 @@
  * @dest: input parameter
  * @src: input parameter
  *
- * Return: dest
+ * Return: result after adding both address together
  */
 
 char *_strcat(char *dest, char *src)
