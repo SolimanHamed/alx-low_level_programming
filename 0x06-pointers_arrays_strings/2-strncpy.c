@@ -11,7 +11,7 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *result = dest;
+	char *result = dest; /* lets insert the value of dest to result*/
 	int i;
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
